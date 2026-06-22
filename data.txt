@@ -1,0 +1,393 @@
+{
+	"2" : [{"name":"vimal",
+		"passwd":"x",
+		"GID":"5008",
+		"users":""
+		}] ,
+	"3" : [{"name":"helloworkd",
+		"passwd":"x",
+		"GID":"5007",
+		"users":""
+		}] ,
+	"4" : [{"name":"kkksksksksk",
+		"passwd":"x",
+		"GID":"5006",
+		"users":""
+		}] ,
+	"5" : [{"name":"lakesh",
+		"passwd":"x",
+		"GID":"2007",
+		"users":""
+		}] ,
+	"6" : [{"name":"koisabhi",
+		"passwd":"x",
+		"GID":"2006",
+		"users":""
+		}] ,
+	"7" : [{"name":"dineshjjjjjjjjjj",
+		"passwd":"x",
+		"GID":"1008",
+		"users":""
+		}] ,
+	"8" : [{"name":"makaasdf",
+		"passwd":"x",
+		"GID":"1007",
+		"users":""
+		}] ,
+	"9" : [{"name":"bhikkjhj",
+		"passwd":"x",
+		"GID":"1006",
+		"users":""
+		}] ,
+	"10" : [{"name":"newuser",
+		"passwd":"x",
+		"GID":"1005",
+		"users":""
+		}] ,
+	"11" : [{"name":"dineshajmera",
+		"passwd":"x",
+		"GID":"1004",
+		"users":""
+		}] ,
+	"12" : [{"name":"dinesah123sd",
+		"passwd":"x",
+		"GID":"1003",
+		"users":""
+		}] ,
+	"13" : [{"name":"dinesah123",
+		"passwd":"x",
+		"GID":"1002",
+		"users":""
+		}] ,
+	"14" : [{"name":"dinesah",
+		"passwd":"x",
+		"GID":"1001",
+		"users":""
+		}] ,
+	"15" : [{"name":"dinesh",
+		"passwd":"x",
+		"GID":"1000",
+		"users":""
+		}] ,
+	"16" : [{"name":"plocate",
+		"passwd":"x",
+		"GID":"978",
+		"users":""
+		}] ,
+	"17" : [{"name":"tcpdump",
+		"passwd":"x",
+		"GID":"72",
+		"users":""
+		}] ,
+	"18" : [{"name":"dnsmasq",
+		"passwd":"x",
+		"GID":"979",
+		"users":""
+		}] ,
+	"19" : [{"name":"chrony",
+		"passwd":"x",
+		"GID":"980",
+		"users":""
+		}] ,
+	"20" : [{"name":"sshd",
+		"passwd":"x",
+		"GID":"74",
+		"users":""
+		}] ,
+	"21" : [{"name":"rpcuser",
+		"passwd":"x",
+		"GID":"29",
+		"users":""
+		}] ,
+	"22" : [{"name":"power",
+		"passwd":"x",
+		"GID":"981",
+		"users":""
+		}] ,
+	"23" : [{"name":"gnome-initial-setup",
+		"passwd":"x",
+		"GID":"982",
+		"users":""
+		}] ,
+	"24" : [{"name":"gdm",
+		"passwd":"x",
+		"GID":"42",
+		"users":""
+		}] ,
+	"25" : [{"name":"flatpak",
+		"passwd":"x",
+		"GID":"983",
+		"users":""
+		}] ,
+	"26" : [{"name":"setroubleshoot",
+		"passwd":"x",
+		"GID":"984",
+		"users":""
+		}] ,
+	"27" : [{"name":"colord",
+		"passwd":"x",
+		"GID":"985",
+		"users":""
+		}] ,
+	"28" : [{"name":"wsdd",
+		"passwd":"x",
+		"GID":"986",
+		"users":""
+		}] ,
+	"29" : [{"name":"brlapi",
+		"passwd":"x",
+		"GID":"987",
+		"users":""
+		}] ,
+	"30" : [{"name":"systemd-coredump",
+		"passwd":"x",
+		"GID":"988",
+		"users":""
+		}] ,
+	"31" : [{"name":"pipewire",
+		"passwd":"x",
+		"GID":"989",
+		"users":""
+		}] ,
+	"32" : [{"name":"libstoragemgmt",
+		"passwd":"x",
+		"GID":"990",
+		"users":""
+		}] ,
+	"33" : [{"name":"gnome-remote-desktop",
+		"passwd":"x",
+		"GID":"991",
+		"users":""
+		}] ,
+	"34" : [{"name":"sssd",
+		"passwd":"x",
+		"GID":"992",
+		"users":""
+		}] ,
+	"35" : [{"name":"clevis",
+		"passwd":"x",
+		"GID":"993",
+		"users":""
+		}] ,
+	"36" : [{"name":"rpc",
+		"passwd":"x",
+		"GID":"32",
+		"users":""
+		}] ,
+	"37" : [{"name":"rtkit",
+		"passwd":"x",
+		"GID":"172",
+		"users":""
+		}] ,
+	"38" : [{"name":"geoclue",
+		"passwd":"x",
+		"GID":"994",
+		"users":""
+		}] ,
+	"39" : [{"name":"printadmin",
+		"passwd":"x",
+		"GID":"995",
+		"users":""
+		}] ,
+	"40" : [{"name":"polkitd",
+		"passwd":"x",
+		"GID":"114",
+		"users":""
+		}] ,
+	"41" : [{"name":"systemd-journal",
+		"passwd":"x",
+		"GID":"190",
+		"users":""
+		}] ,
+	"42" : [{"name":"sgx",
+		"passwd":"x",
+		"GID":"106",
+		"users":""
+		}] ,
+	"43" : [{"name":"render",
+		"passwd":"x",
+		"GID":"105",
+		"users":""
+		}] ,
+	"44" : [{"name":"kvm",
+		"passwd":"x",
+		"GID":"36",
+		"users":""
+		}] ,
+	"45" : [{"name":"input",
+		"passwd":"x",
+		"GID":"104",
+		"users":""
+		}] ,
+	"46" : [{"name":"systemd-oom",
+		"passwd":"x",
+		"GID":"996",
+		"users":""
+		}] ,
+	"47" : [{"name":"avahi",
+		"passwd":"x",
+		"GID":"70",
+		"users":""
+		}] ,
+	"48" : [{"name":"tss",
+		"passwd":"x",
+		"GID":"59",
+		"users":"clevis"
+		}] ,
+	"49" : [{"name":"rhsm",
+		"passwd":"x",
+		"GID":"997",
+		"users":"yggdrasil"
+		}] ,
+	"50" : [{"name":"yggdrasil-worker",
+		"passwd":"x",
+		"GID":"998",
+		"users":"yggdrasil"
+		}] ,
+	"51" : [{"name":"yggdrasil",
+		"passwd":"x",
+		"GID":"999",
+		"users":""
+		}] ,
+	"52" : [{"name":"utempter",
+		"passwd":"x",
+		"GID":"35",
+		"users":""
+		}] ,
+	"53" : [{"name":"utmp",
+		"passwd":"x",
+		"GID":"22",
+		"users":""
+		}] ,
+	"54" : [{"name":"dbus",
+		"passwd":"x",
+		"GID":"81",
+		"users":""
+		}] ,
+	"55" : [{"name":"nobody",
+		"passwd":"x",
+		"GID":"65534",
+		"users":""
+		}] ,
+	"56" : [{"name":"clock",
+		"passwd":"x",
+		"GID":"103",
+		"users":""
+		}] ,
+	"57" : [{"name":"users",
+		"passwd":"x",
+		"GID":"100",
+		"users":""
+		}] ,
+	"58" : [{"name":"audio",
+		"passwd":"x",
+		"GID":"63",
+		"users":""
+		}] ,
+	"59" : [{"name":"lock",
+		"passwd":"x",
+		"GID":"54",
+		"users":""
+		}] ,
+	"60" : [{"name":"ftp",
+		"passwd":"x",
+		"GID":"50",
+		"users":""
+		}] ,
+	"61" : [{"name":"video",
+		"passwd":"x",
+		"GID":"39",
+		"users":""
+		}] ,
+	"62" : [{"name":"tape",
+		"passwd":"x",
+		"GID":"33",
+		"users":""
+		}] ,
+	"63" : [{"name":"games",
+		"passwd":"x",
+		"GID":"20",
+		"users":""
+		}] ,
+	"64" : [{"name":"floppy",
+		"passwd":"x",
+		"GID":"19",
+		"users":""
+		}] ,
+	"65" : [{"name":"dialout",
+		"passwd":"x",
+		"GID":"18",
+		"users":""
+		}] ,
+	"66" : [{"name":"man",
+		"passwd":"x",
+		"GID":"15",
+		"users":""
+		}] ,
+	"67" : [{"name":"mail",
+		"passwd":"x",
+		"GID":"12",
+		"users":""
+		}] ,
+	"68" : [{"name":"cdrom",
+		"passwd":"x",
+		"GID":"11",
+		"users":""
+		}] ,
+	"69" : [{"name":"wheel",
+		"passwd":"x",
+		"GID":"10",
+		"users":"dinesh"
+		}] ,
+	"70" : [{"name":"kmem",
+		"passwd":"x",
+		"GID":"9",
+		"users":""
+		}] ,
+	"71" : [{"name":"mem",
+		"passwd":"x",
+		"GID":"8",
+		"users":""
+		}] ,
+	"72" : [{"name":"lp",
+		"passwd":"x",
+		"GID":"7",
+		"users":""
+		}] ,
+	"73" : [{"name":"disk",
+		"passwd":"x",
+		"GID":"6",
+		"users":""
+		}] ,
+	"74" : [{"name":"tty",
+		"passwd":"x",
+		"GID":"5",
+		"users":""
+		}] ,
+	"75" : [{"name":"adm",
+		"passwd":"x",
+		"GID":"4",
+		"users":""
+		}] ,
+	"76" : [{"name":"sys",
+		"passwd":"x",
+		"GID":"3",
+		"users":""
+		}] ,
+	"77" : [{"name":"daemon",
+		"passwd":"x",
+		"GID":"2",
+		"users":""
+		}] ,
+	"78" : [{"name":"bin",
+		"passwd":"x",
+		"GID":"1",
+		"users":""
+		}] ,
+	"79" : [{"name":"root",
+		"passwd":"x",
+		"GID":"0",
+		"users":""
+		}] ,
+"e" : {"name":"","passwd":"","GID":"","users":"}
+}
