@@ -7,9 +7,9 @@ app = Flask(__name__)
 app.secret_key="secrete key"
 @app.route("/")
 def login_page():
-    result=subprocess.run([ "bash" , "user_count.sh"],capture_output=True,text=True)
+    result=subprocess.run([ "bash" , "bash_scripts/user_count.sh"],capture_output=True,text=True)
     user_count=result.stdout
-    result=subprocess.run([ "bash" , "groups_count.sh"],capture_output=True,text=True)
+    result=subprocess.run([ "bash" , "bash_scripts/groups_count.sh"],capture_output=True,text=True)
     group_count=result.stdout
     return render_template('index.html',user_count=user_count ,group_count=group_count)
 
@@ -23,7 +23,7 @@ def add_user():
             flash(f" user {username} registretion failed!! . Error is : user need a password","unsuccess")
             return redirect(url_for("add_user"))
         if passwd:
-            result = subprocess.run(["bash", "user_add.sh" , username , passwd ],capture_output=True,text=True)
+            result = subprocess.run(["bash", "bash_scripts/user_add.sh" , username , passwd ],capture_output=True,text=True)
         if result.returncode == 0:
             flash(f"new user {username} is added","success")
             return redirect(url_for("add_user"))
@@ -45,7 +45,7 @@ def add_group():
             flash(f"on group {grpname} you not set any passwd !! .useing passwd is recomanded","unsuccess")
             result = subprocess.run(["groupadd" , grpname ],capture_output=True,text=True)
         if passwd:
-            result = subprocess.run(["bash", "group_aad.sh" , grpname , passwd],capture_output=True,text=True)
+            result = subprocess.run(["bash", "bash_scripts/group_aad.sh" , grpname , passwd],capture_output=True,text=True)
         if result.returncode == 0:
             flash(f"new grp {grpname} is added","success")
             return redirect(url_for("add_group"))
@@ -60,7 +60,7 @@ def add_group():
 
 @app.route('/users')
 def users():
-    result=subprocess.run(['bash','users.sh'], capture_output=True,text=True)
+    result=subprocess.run(['bash','bash_scripts/users.sh'], capture_output=True,text=True)
     result_string=result.stdout
     users =json.loads(result_string)
     return render_template('users.html', users=users )
@@ -68,7 +68,7 @@ def users():
 
 @app.route('/groups')
 def groups():
-    result=subprocess.run(['bash','groups.sh'], capture_output=True,text=True)
+    result=subprocess.run(['bash','bash_scripts/groups.sh'], capture_output=True,text=True)
     result_string=result.stdout
     groups =json.loads(result_string)
     return render_template('groups.html', groups=groups )
@@ -127,7 +127,7 @@ def manipulation():
            # return redirect(url_for("manipulate_users"))
         print(old_detail)
         print(new_detail)
-        result = subprocess.run(["bash" , "change_user_details.sh", f"{old_detail}" , f"{new_detail}"])
+        result = subprocess.run(["bash" , "bash_scripts/change_user_details.sh", f"{old_detail}" , f"{new_detail}"])
         if result.returncode == 0:
             print("success")
             flash('user data is changed successfully!!' , 'success')
@@ -143,14 +143,14 @@ def manipulation():
 
 @app.route('/manipulate_users' , methods=["POST","GET"])
 def manipulate_users():
-    result=subprocess.run(['bash','users.sh'], capture_output=True,text=True)
+    result=subprocess.run(['bash','bash_scripts/users.sh'], capture_output=True,text=True)
     result_string=result.stdout
     users =json.loads(result_string)
     return render_template('manipulate_users.html', users=users )
 
 @app.route('/manipulate_groups' , methods=["POST","GET"])
 def manipulate_groups():
-    result=subprocess.run(['bash','groups.sh'], capture_output=True,text=True)
+    result=subprocess.run(['bash','bash_scripts/groups.sh'], capture_output=True,text=True)
     result_string=result.stdout
     groups =json.loads(result_string)
     return render_template('manipulate_groups.html', groups=groups )
@@ -195,7 +195,7 @@ def group_manipulation():
            # return redirect(url_for("manipulate_groups"))
         print(old_detail)
         print(new_detail)
-        result = subprocess.run(["bash" , "change_group_details.sh", f"{old_detail}" , f"{new_detail}"])
+        result = subprocess.run(["bash" , "bash_scripts/change_group_details.sh", f"{old_detail}" , f"{new_detail}"])
         if result.returncode == 0:
             print("success")
             flash('group data is changed successfully!!' , 'success')
