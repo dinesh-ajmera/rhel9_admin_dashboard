@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Overview</h1>
+<div class="stats">
+  <a class="card stat" href="{{ url_for('users') }}"><div class="num">{{ user_count }}</div><div class="muted">regular users</div></a>
+  <a class="card stat" href="{{ url_for('groups') }}"><div class="num">{{ group_count }}</div><div class="muted">regular groups</div></a>
+</div>
+<p class="muted">"Regular" means ID 1000 to 59999. System accounts such as root are hidden and protected.</p>
+{% endblock %}

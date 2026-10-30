@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Users{% endblock %}
+{% block content %}
+<div class="card"><h1>Users</h1>
+  <table>
+    <tr><th>Name</th><th>UID</th><th>Full name</th><th>Home</th><th>Shell</th></tr>
+    {% for u in users %}
+    <tr><td><b>{{ u.name }}</b></td><td>{{ u.uid }}</td><td>{{ u.comment }}</td><td><code>{{ u.home }}</code></td><td><code>{{ u.shell }}</code></td></tr>
+    {% else %}<tr><td colspan="5" class="muted">No regular users yet.</td></tr>{% endfor %}
+  </table>
+</div>
+
+<form method="post" class="card">
+  <h2>Add user</h2>
+  <input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="action" value="add">
+  <input name="username" placeholder="username" pattern="[a-z_][a-z0-9_\-]{0,31}" required>
+  <input name="comment" placeholder="full name (optional)">
+  <input name="password" type="password" placeholder="password (12+ characters)" minlength="12" autocomplete="new-password" required>
+  <button class="btn" type="submit">Create user</button>
+</form>
+
+<form method="post" class="card">
+  <h2>Change a user</h2>
+  <input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="action" value="change">
+  <select name="username" required>{% for u in users %}<option>{{ u.name }}</option>{% endfor %}</select>
+  <select name="field">
+    <option value="comment">full name</option><option value="shell">shell</option><option value="home">home directory</option>
+    <option value="lock">lock account</option><option value="unlock">unlock account</option>
+  </select>
+  <input name="value" placeholder="new value (not needed for lock/unlock)">
+  <button class="btn" type="submit">Apply</button>
+</form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Sign in{% endblock %}
+{% block content %}
+<form method="post" class="card" style="max-width: 22rem; margin: 3rem auto;">
+  <h1>Sign in</h1>
+  {% if not configured %}
+  <p class="flash error">No password is set yet. Set <code>DASHBOARD_PASSWORD_HASH</code> (see README).</p>
+  {% endif %}
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <label>Username<br><input name="username" autofocus required></label><br>
+  <label>Password<br><input name="password" type="password" required></label><br>
+  <button class="btn" type="submit">Sign in</button>
+</form>
+{% endblock %}
