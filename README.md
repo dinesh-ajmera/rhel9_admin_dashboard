@@ -40,7 +40,7 @@ Open http://localhost:5000
 
 ## Screenshots
 
-![Dashboard](docs/dashboard.png)
+![Dashboard](docs/demo.gif)
 
 ## What I learned
 
