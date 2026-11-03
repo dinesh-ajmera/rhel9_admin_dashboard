@@ -44,7 +44,9 @@ Open http://localhost:5000
 
 ## What I learned
 
-- [one or two real lessons, e.g. calling shell scripts safely from Python]
+- calling shell scripts safely from Python
+- linux admin tasks 
+
 
 ## Next steps
 
